@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="formulario.css" media="">
+    <title>Formulário</title>
+</head>
+<body>
+
+    <div>
+        <h1 id="titulo">Ficha Criminal</h1>
+        <br>
+    </div>
+
+    <form>
+        <fieldset class="grupo">
+           
+            <div class="campo">
+                <label for="Local da ocorrência"><strong>Local da ocorrência</strong></label>
+                <input type="text" name="Local da ocorrência" id="Local da ocorrência" required>
+            </div>
+            <div class="campo">
+                <label for="Nome do policial"><strong>Nome do policial</strong></label>
+                <input type="text" name="Nome do policial" id="Nome do policial" required>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <div class="campo">
+                <label for="Nome dos civis envolvidos"><strong>Nome dos civis envolvidos</strong></label>
+                <input type="text" name="Nome dos civis envolvidos" id="Nome dos civis envolvidos" required>
+            </div>
+        </fieldset>
+        
+        <div class="campo">
+            <label for="Data do ocorrido"><strong>Data do ocorrido</strong></label>
+            <input type="date" name="Data do ocorrido" id="Data do ocorrido" required>
+        </div>
+        <div class="campo">
+            <label for="Hora do ocorrido"><strong>Hora do ocorrido</strong></label>
+            <input type="time" name="Hora do ocorrido" id="Hora do ocorrido" required>
+        </div>
+
+            <div class="campo">
+                <text>Selecione os prints de itens apreendidos e foto dos civis:</text>
+                <br>
+                <label for="arquivo"></label>
+                <input type="file" name="arquivo" id="arquivo">
+            </div>
+
+            <div class="campo">
+                <label><strong>Réu primário?</strong></label>
+                <label>
+                <input type="radio" name="devweb" value="Sim" checked>Sim
+            </label>
+            <label>
+                <input type="radio" name="devweb" value="Não">Não
+            </label>
+        </div>
+
+        <div class="campo">
+                <label for="Selecione os crimes cometidos"><strong>Selecione os crimes cometidos</strong></label>
+                <select id="Selecione os crimes cometidos" required>
+                  <option selected disabled value="">Selecione</option>
+                  
+            <optgroup label="Delitos leves">
+                <option>Alta velocidade</option>
+                <option>Direção perigosa</option>
+                <option>Abandono de veiculo</option>
+                <option>Abandono de veiculo público</option>
+                <option>Poluição sonora</option>
+                <option>Poluição sonora em instituições governamentais</option>
+                <option>Utilizar veículo danificado</option>
+                <option>Atropelamento</option>
+                <option>Estacionar em local proibido</option>
+                <option>Fuga</option>
+                <option>Corrida ilegal</option>
+            </optgroup>
+
+            <optgroup label="Crimes leves">
+                <option>Ocultação facial</option>
+                <option>Calúnia</option>
+                <option>Difamação</option>
+                <option>Atentado ao pudor</option>
+                <option>Dano ao patrimônio</option>
+                <option>Dano ao patrimônio público</option>
+                <option>Multas acumuladas</option>
+                <option>Resistência a prisão</option>
+                <option>Resistência a ordem de parada</option>
+                <option>Obstrução de justiça</option>
+                <option>Utilizar equipamento policial</option>
+                <option>Desacato</option>
+                <option>Falso testemunho</option>
+                <option>Injúria</option>
+                <option>Invasão</option>
+                <option>Invasão</option>
+                <option>Receptação</option>
+                <option>Extelionato</option>
+            </optgroup>
+
+            <optgroup label="Crimes de médio risco">
+                <option>Crime virtual</option>
+                <option>Falsidade ideológica</option>
+                <option>Omissão de socorro</option>
+                <option>Lesão corporal</option>
+                <option>Lesão corporal grave</option>
+                <option>Suborno</option>
+                <option>Extorção</option>
+                <option>Porte de arma ilegal t1</option>
+                <option>Porte de arma ilegal t2</option>
+                <option>Porte de arma ilegal t3</option>
+                <option>Posse de munições</option>
+                <option>Porte ilegal de arma de caça</option>
+                <option>Tráfico de drogas</option>
+                <option>Produzir/Cultivar drogas</option>
+            </optgroup>
+
+            <optgroup label="Assaltos">
+                <option>Tentativa de furto</option>
+                <option>Tentativa de roubo</option>
+                <option>Furto</option>
+                <option>Roubo</option>
+                <option>Furto a residência</option>
+                <option>Roubo a residência</option>
+                <option>Roubo a registradora/barbearia</option>
+                <option>Roubo a caixa eletrônico</option>
+                <option>Associação criminosa</option>
+                <option>Roubo a loja de armas</option>
+                <option>Roubo a loja de departamentos</option>
+                <option>Furto de veiculo</option>
+                <option>Roubo de veiculo</option>
+                <option>Roubo a veiculo governamental</option>
+                <option>Roubo a agência bancária</option>
+                <option>Assalto a banco de paleto</option>
+                <option>Assalto a banco central</option>
+                <option>Roubo a carro forte</option>
+                <option>Roubo a joalheria</option>
+                <option>Sequestro</option>
+            </optgroup>
+
+            <optgroup label="Crimes contra a vida">
+                <option>Ameaça</option>
+                <option>Tentativa de homicidio</option>
+                <option>Homicidio</option>
+                <option>Tentativa de homicidio a oficial</option>
+                <option>Homicidio de oficial</option>
+                <option>Latrocinio</option>
+                <option>Terrorismo</option>
+            </optgroup>
+
+            <optgroup label="Crimes Jurídicos">
+                <option>Corrupção</option>
+                <option>Abuso de poder público</option>
+            </optgroup>
+
+            <optgroup label="Itens Ilegais">
+                <option>Algema</option>
+                <option>Colete</option>
+                <option>Lockpick</option>
+                <option>Pendrive</option>
+                <option>Placa adulterada</option>
+                <option>Dolares ilicitos</option>
+                <option>C4</option>
+            </optgroup>
+
+            </select>
+
+        </div>
+
+        <div class="campo">
+            <br>
+            <label for="ocorrencia"><strong>Ocorrência: </strong></label>
+            <textarea rows="6" style="width: 26em" id="ocorrencia" name="ocorrencia"></textarea>
+        </div>  
+        <button class="botao" type="submit" onsubmit="">Enviar</button> 
+    </form>
+</body>
+</html>
